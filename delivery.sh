@@ -13,7 +13,7 @@ echo 'within <project/> of your Java/Maven project''s "pom.xml" file.'
 set -x
 NAME=`mvn help:evaluate -Dexpression=project.name | grep "^[^\[]"`
 set +x
-
+echo 'test'
 echo 'The following complex command behaves similarly to the previous one but'
 echo 'extracts the value of the <version/> element within <project/> instead.'
 set -x
